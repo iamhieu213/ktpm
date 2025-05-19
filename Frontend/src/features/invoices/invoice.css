@@ -1,0 +1,71 @@
+/* Styles for the status display in InvoiceRow */
+.status {
+    font-weight: bold; /* Làm chữ đậm */
+    padding: 4px 8px; /* Thêm khoảng đệm */
+    border-radius: 4px; /* Bo tròn góc */
+    text-align: center; /* Căn giữa chữ */
+    display: inline-block; /* Cho phép padding và border-radius hoạt động tốt */
+    min-width: 80px; /* Đảm bảo chiều rộng tối thiểu cho đồng nhất */
+}
+
+/* Style for Paid status */
+.status-paid {
+    background-color: #d4edda; 
+    color: #155724; 
+    border: 1px solid #c3e6cb; 
+}
+
+/* Style for Unpaid status */
+.status-unpaid {
+    background-color: #fff3cd; 
+    color: #856404; /* Chữ vàng đậm */
+    border: 1px solid #ffeeba; /* Viền vàng */
+}
+
+/* Style for Overdue status */
+.status-overdue {
+    background-color: #f8d7da; /* Nền đỏ nhạt */
+    color: #721c24; /* Chữ đỏ đậm */
+    border: 1px solid #f5c6cb; /* Viền đỏ */
+}
+
+/* Optional: Style for unknown status */
+.status-unknown {
+     background-color: #e2e3e5; /* Nền xám nhạt */
+     color: #383d41; /* Chữ xám đậm */
+     border: 1px solid #d6d8db; /* Viền xám */
+}
+/* Style chung cho nút thanh toán */
+.btn-pay {
+    padding: 6px 12px;
+    background-color: #007bff; /* Màu xanh dương đậm */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+
+/* Hover effect */
+.btn-pay:hover {
+    background-color: #0056b3;
+}
+
+/* Trạng thái disabled */
+.btn-pay:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+/* Optional: Hiệu ứng đang xử lý */
+.btn-pay.loading {
+    background-color: #6c757d;
+    color: white;
+    cursor: wait;
+}
